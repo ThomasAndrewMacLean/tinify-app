@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+#drag-file {
+    background-color: white;
+    color: #333;
+    font-family: 'Jost';
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+p {
+    pointer-events: none;
+}
+.drop-area {
+    border: 2px dashed #666;
+    padding: 3rem;
+    margin: 2rem;
+    pointer-events: none;
+}
+
+.working {
+    background: darkcyan !important;
+    color: white !important;
+}
+.working .drop-area {
+    border-color: white;
+    opacity: 0.2;
+}
+.working .loader {
+    display: flex;
+}
+.loader {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+.working .loader svg {
+    animation: spin 3s infinite ease;
+}
+
+.hover {
+    background-color: lightblue !important;
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
