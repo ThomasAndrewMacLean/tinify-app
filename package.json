@@ -19,13 +19,10 @@
     "license": "CC0-1.0",
     "devDependencies": {
         "electron": "^8.2.5",
-        "electron-builder": "^22.6.0",
         "electron-packager": "^14.2.1"
     },
     "dependencies": {
         "electron-reload": "^1.5.0",
-        "material-design-icons": "^3.0.1",
-        "tinify": "^1.6.0-beta.2",
-        "typeface-montserrat": "0.0.75"
+        "tinify": "^1.6.0-beta.2"
     }
 }
