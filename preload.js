@@ -4,9 +4,6 @@ const fs = require('fs');
 const tinify = require('tinify');
 tinify.key = process.env.TINIFY_API_KEY;
 
-let compressionsThisMonth = tinify.compressionCount;
-
-console.log(compressionsThisMonth);
 window.addEventListener('DOMContentLoaded', () => {
     const replaceText = (selector, text) => {
         const element = document.getElementById(selector);

@@ -2,7 +2,9 @@
 const { app, BrowserWindow } = require('electron');
 require('electron-reload')(__dirname);
 const path = require('path');
-
+const appEnv = require('./.env');
+console.log(appEnv);
+process.env.TINIFY_API_KEY = appEnv.TINIFY_API_KEY;
 function createWindow() {
     // Create the browser window.
     const mainWindow = new BrowserWindow({
