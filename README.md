@@ -7,4 +7,4 @@ A small app that let's you drag images on it that will be tinified using tinyPNG
 - Past key in .env.json file
 - Run npm install
 - Run npm run build (can take a while)
-- Copy the tinify app from ./dist/tinify-darwin-x64/tinify => applications
+- The postbuild script will copy the application into the Applications folder
